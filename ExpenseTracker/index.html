@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="icon" href="image/png-clipart-computer-icons-vehicle-tracking-system-gps-tracking-unit-tracker-text-logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" initial-scale="1">
+</head>
+<body>
+    <div class="container">
+        <div class="budget-container">
+            <div id="name">
+                <h1>Remaining Amount</h1>
+                <p id="date">27th July</p>
+                <div id="budget-display">
+                    <h3 id="remaining-budget">$000.00</h3>
+                </div> 
+            </div>
+        </div>  
+        <div class="calculation">
+            <h1>Track Your Budget</h1>
+            <h4>History</h4> 
+            <div id="history-title">
+                <div id="clear" onclick="clearList()">clear</div>
+            </div>
+            
+            <div id="history">
+                <ul>
+                </ul>
+            </div>
+            <div class="user-input">
+                <p>Budget</p>
+                <div id="getinfo">
+                    <input type="text" id="budget-input" placeholder="enter your budget.." opacity="0.5">
+                    <button id="submit-budget" onclick="getBudget()"><h3>Add</h3></button>
+                </div>
+                <p>Expense</p>
+                <div id="getinfo">
+                    <input type="text" id="description-input" placeholder="enter description.." opacity="0.5">
+                </div>
+                <div id="getinfo">
+                    <input type="text" id="amount-input" placeholder="enter amount.." opacity="0.5">
+                    <button id="submit-entry" onclick="addEntry()"><h3>Add</h3></button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script> 
+</body>
+</html>
